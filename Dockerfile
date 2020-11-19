@@ -1,5 +1,5 @@
 FROM openjdk:8-alpine
-ARG VERSION=4.3.0.2102
+ARG VERSION=4.5.0.2216
 
 RUN wget --no-verbose https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$VERSION.zip -O /tmp/sonar-scanner-cli.zip; unzip /tmp/sonar-scanner-cli.zip -d /opt/
 RUN ln -s /opt/sonar-scanner-$VERSION /opt/sonar-scanner
